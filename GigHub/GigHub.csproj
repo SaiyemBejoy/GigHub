@@ -198,6 +198,10 @@
     <Compile Include="Migrations\202009100535480_EditedNameOfVenue.Designer.cs">
       <DependentUpon>202009100535480_EditedNameOfVenue.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009101011390_AddNameFieldToApplicationUser.cs" />
+    <Compile Include="Migrations\202009101011390_AddNameFieldToApplicationUser.Designer.cs">
+      <DependentUpon>202009101011390_AddNameFieldToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Genre.cs" />
@@ -303,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009100535480_EditedNameOfVenue.resx">
       <DependentUpon>202009100535480_EditedNameOfVenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009101011390_AddNameFieldToApplicationUser.resx">
+      <DependentUpon>202009101011390_AddNameFieldToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
