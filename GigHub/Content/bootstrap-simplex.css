@@ -8237,3 +8237,8 @@ label {
 .pager .disabled > a {
     border-color: #dddddd;
 }
+
+span.field-validation-error {
+    color: red;
+    font-weight: bold;
+}
