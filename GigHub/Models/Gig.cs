@@ -12,7 +12,7 @@ namespace GigHub.Models
         public DateTime DateTime { get; set; }
         [Required]
         [StringLength(255)]
-        public string Venu { get; set; }
+        public string Venue { get; set; }
         public Genre Genre { get; set; }
         [Required]
         public byte GenreId { get; set; }
