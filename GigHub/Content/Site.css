@@ -80,3 +80,12 @@ span.field-validation-error {
 .gigs > li .details .genre {
     font-size: 14px;
 }
+
+.gigs > li .actions{
+    font-size: 12px;
+    display:none;
+}
+
+.gigs >li:hover .actions{
+    display: block;
+}

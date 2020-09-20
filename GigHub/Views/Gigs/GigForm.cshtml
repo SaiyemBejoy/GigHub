@@ -3,14 +3,15 @@
 @{
     /**/
 
-    ViewBag.Title = "Add a Gig";
+    ViewBag.Title = @Model.Heading;
 }
 
-<h2>Add a Gig</h2>
-@using (Html.BeginForm("Create", "Gigs"))
+<h2>@Model.Heading</h2>
+@using (Html.BeginForm(Model.Action, "Gigs"))
 {
     <p class="alert alert-info">All fields are <strong>required</strong>.</p>
     @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.Id)
 
     <div class="form-group">
         @Html.LabelFor(m => m.Venue)
