@@ -178,8 +178,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AttendancesController.cs" />
-    <Compile Include="Controllers\FollowingsController.cs" />
+    <Compile Include="Controllers\Api\GigsController.cs" />
+    <Compile Include="Controllers\Api\AttendancesController.cs" />
+    <Compile Include="Controllers\Api\FollowingsController.cs" />
     <Compile Include="Controllers\GigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -224,6 +225,10 @@
     <Compile Include="Migrations\202009141010549_FollowingTableCreation.Designer.cs">
       <DependentUpon>202009141010549_FollowingTableCreation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009230632293_AddIsCanceledToGig.cs" />
+    <Compile Include="Migrations\202009230632293_AddIsCanceledToGig.Designer.cs">
+      <DependentUpon>202009230632293_AddIsCanceledToGig.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Attendance.cs" />
@@ -249,6 +254,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -343,6 +349,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009141010549_FollowingTableCreation.resx">
       <DependentUpon>202009141010549_FollowingTableCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009230632293_AddIsCanceledToGig.resx">
+      <DependentUpon>202009230632293_AddIsCanceledToGig.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
